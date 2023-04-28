@@ -1,6 +1,7 @@
 package com.tjut.pojo.dto.param;
 
 import com.tjut.pojo.dto.param.paramObjects.WillParam;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
@@ -21,6 +22,7 @@ public class RegisterParam {
     @NotNull(message = "班级不能为空")
     private String className;
     @NotNull(message = "志愿不能为空")
+    @Valid
     private List<WillParam> wills;
     @NotNull(message = "是否同意调剂不能为空")
     private boolean isDispensing;

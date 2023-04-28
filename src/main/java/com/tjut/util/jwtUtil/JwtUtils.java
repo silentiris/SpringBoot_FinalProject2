@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class JwtUtils {
     public static final long EXPIRE_TIME = (long) 1000*60*60*24*15;
-    public static final String SECRET = "SECRET";
+    public static final String SECRET = "SIPC115";
 
     public static String sign(UserPo userPo){
         Date expireDate = new Date(System.currentTimeMillis() + EXPIRE_TIME);
